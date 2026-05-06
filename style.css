@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: radial-gradient(circle at top, #6a4f51, #000);
+  background-color: #6a4f51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cover {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin: 10px 0 4px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.artist {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.release-date {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.release-label {
+  opacity: 0.7;
+}
+
+/* Card */
+.card {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Rows */
+.row {
+  display: grid;
+  grid-template-columns: 40% auto;
+  align-items: center;
+  gap: 15%;
+
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.row:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.row img {
+  width: 100%;
+}
+
+.row span {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row:not(:last-child) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Button */
+.row button {
+  background: #ddd;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.row button:hover {
+  background: #ccc;
+}
+
+/* Pre-order Date Badge */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.pre-order-date {
+  font-size: 0.75rem;
+  background: #e8b4b8;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
