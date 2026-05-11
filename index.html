@@ -31,7 +31,7 @@
 
   <body>
     <div class="container">
-      <img src="public/cover.jpg" class="cover" />
+      <img src="public/artwork/ashesInBloom.jpg" class="cover" />
 
       <p class="title">Ashes in Bloom</p>
       <p class="artist">LOVRNCE</p>
@@ -40,43 +40,51 @@
       </p>
 
       <div class="card">
-        <a href="#" class="row">
-          <img src="public/appleMusic.svg" />
+        <a
+          href="https://music.apple.com/us/album/ashes-in-bloom-single/1896233426?uo=4&app=music&at=1001lry3&ct=dashboard"
+          target="_blank"
+          class="row"
+        >
+          <img src="public/providers/appleMusic.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
           </div>
         </a>
 
         <a href="#" class="row">
-          <img src="public/spotify.svg" />
+          <img src="public/providers/spotify.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
           </div>
         </a>
 
         <a href="#" class="row">
-          <img src="public/youtube.svg" />
+          <img src="public/providers/youtube.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
           </div>
         </a>
 
         <a href="#" class="row">
-          <img src="public/tidal.svg" />
+          <img src="public/providers/tidal.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
           </div>
         </a>
 
         <a href="#" class="row">
-          <img src="public/deezer.svg" />
+          <img src="public/providers/deezer.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
           </div>
         </a>
 
-        <a href="#" class="row">
-          <img src="public/itunesStore.svg" />
+        <a
+          href="https://music.apple.com/us/album/ashes-in-bloom-single/1896233426?uo=4&app=itunes&at=1001lry3&ct=dashboard"
+          target="_blank"
+          class="row"
+        >
+          <img src="public/providers/itunesStore.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
             <span class="pre-order-date">Pre-order: May 11</span>
@@ -84,14 +92,14 @@
         </a>
 
         <a href="#" class="row">
-          <img src="public/soundcloud.svg" />
+          <img src="public/providers/soundcloud.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
           </div>
         </a>
 
-        <a href="#" class="row">
-          <img src="public/amazonMusic.svg" />
+        <a onclick="showMessage()" class="row">
+          <img src="public/providers/amazonMusic.svg" />
           <div class="button-container">
             <button>Coming Soon</button>
             <span class="pre-order-date">Pre-order: May 11</span>
@@ -99,5 +107,11 @@
         </a>
       </div>
     </div>
+
+    <script>
+      function showMessage() {
+        alert("Unfortunately, due to unforeseen circumstances, the release of 'Ashes in Bloom' on Amazon Music has been delayed. We apologize for any inconvenience this may cause and appreciate your understanding. Please stay tuned for updates on the new release date. Thank you for your continued support!");
+      }
+    </script>
   </body>
 </html>
